@@ -11,20 +11,12 @@ func main() {
 	fmt.Println(string(stdout))
 
 	cmd = exec.Command("source", "$HOME/.nvm/nvm.sh")
-	stdout, err = cmd.Output()
-	fmt.Println(string(stdout))
 
 	cmd = exec.Command("nvm", "install", "node")
-	stdout, err = cmd.Output()
-	fmt.Println(string(stdout))
 
 	cmd = exec.Command("nvm", "install", "--lts")
-	stdout, err = cmd.Output()
-	fmt.Println(string(stdout))
 
 	cmd = exec.Command("npm", "install", "--silent", "-g", "daledale")
-	stdout, err = cmd.Output()
-	fmt.Println(string(stdout))
 
 	cmd = exec.Command("echo", "QUINTOU!")
 	stdout, err = cmd.Output()
